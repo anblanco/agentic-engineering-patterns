@@ -669,6 +669,11 @@ const slides = [
         <span class="reference-title">Engineering at Anthropic</span>
         <span class="reference-desc">Building effective agents, context engineering, agentic coding best practices, and evaluation methodologies</span>
       </a>
+      <a href="https://code.claude.com/docs/en/best-practices" target="_blank" rel="noopener" class="reference-item">
+        <span class="reference-source">Claude Code Docs</span>
+        <span class="reference-title">Best Practices for Claude Code</span>
+        <span class="reference-desc">Tips and patterns for getting the most out of Claude Code, from environment setup to scaling across parallel sessions</span>
+      </a>
       <a href="https://simonwillison.net" target="_blank" rel="noopener" class="reference-item">
         <span class="reference-source">Simon Willison</span>
         <span class="reference-title">Simon Willison\u2019s Weblog</span>

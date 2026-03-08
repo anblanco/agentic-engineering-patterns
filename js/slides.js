@@ -664,6 +664,11 @@ const slides = [
     title: '<span class="accent">References</span>',
     bullets: [],
     svg: `<div class="references-list">
+      <a href="https://www.penguinrandomhouse.com/books/743569/empire-of-ai-by-karen-hao/" target="_blank" rel="noopener" class="reference-item">
+        <span class="reference-source">Karen Hao</span>
+        <span class="reference-title">Empire of AI: Dreams and Nightmares in Sam Altman\u2019s OpenAI</span>
+        <span class="reference-desc">A required reading for AI enthusiasts and AI critics alike</span>
+      </a>
       <a href="https://www.anthropic.com/engineering" target="_blank" rel="noopener" class="reference-item">
         <span class="reference-source">Anthropic</span>
         <span class="reference-title">Engineering at Anthropic</span>

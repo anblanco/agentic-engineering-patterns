@@ -554,14 +554,14 @@ kbd {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
 .reference-item {
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
-  padding: 0.55rem 1.25rem;
+  gap: 0.1rem;
+  padding: 0.4rem 1.1rem;
   border-radius: var(--radius-sm);
   border: 1px solid var(--glass-border);
   background: rgba(255, 255, 255, 0.02);
@@ -575,7 +575,7 @@ kbd {
 }
 
 .reference-source {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -584,14 +584,14 @@ kbd {
 }
 
 .reference-title {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 500;
   color: var(--text);
 }
 
 .reference-desc {
-  font-size: 0.8rem;
-  line-height: 1.4;
+  font-size: 0.75rem;
+  line-height: 1.35;
   color: var(--text-secondary);
 }
 

@@ -674,6 +674,11 @@ const slides = [
         <span class="reference-title">Best Practices for Claude Code</span>
         <span class="reference-desc">Tips and patterns for getting the most out of Claude Code, from environment setup to scaling across parallel sessions</span>
       </a>
+      <a href="https://openai.com/index/harness-engineering/" target="_blank" rel="noopener" class="reference-item">
+        <span class="reference-source">OpenAI</span>
+        <span class="reference-title">Harness Engineering: Leveraging Codex in an Agent-First World</span>
+        <span class="reference-desc">Building a product with 0 manually-written code \u2014 lessons on agent legibility, architecture enforcement, and feedback loops</span>
+      </a>
       <a href="https://simonwillison.net" target="_blank" rel="noopener" class="reference-item">
         <span class="reference-source">Simon Willison</span>
         <span class="reference-title">Simon Willison\u2019s Weblog</span>

@@ -51,6 +51,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 1. **Storytelling opener** (Slide 1): Title + centered quote + hero image, no bullets. Speaker drives the narrative cold.
 2. **Concept slide** (Slides 2–3): Title + 2–3 bullets + inline SVG diagram. Standard teaching format.
 
+### Writing tone
+- Use a **neutral, fact-oriented tone** — avoid editorializing content
+- State observations and let the facts speak for themselves (e.g., "many teams converge on this" not "every team that succeeds does this")
+- Avoid unqualified superlatives and opinion words like "undeniably," "genuinely," "real" (as intensifier)
+- Exception: "unreasonably effective" is a deliberate tagline — keep it where used intentionally
+
 ### Speaker notes
 - Every slide must have `notes` — this is the speaker's script/context
 - Notes can be long-form quotes, background context, or delivery guidance

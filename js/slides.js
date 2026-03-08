@@ -15,24 +15,25 @@ const slides = [
   {
     title: 'What We\u2019ll <span class="accent">Cover</span>',
     bullets: [],
-    svg: `<svg viewBox="0 0 600 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+    svg: `<svg viewBox="0 0 600 280" fill="none" xmlns="http://www.w3.org/2000/svg">
       <!-- Section 1: Foundations -->
       <text x="60" y="24" fill="rgba(41,151,255,0.6)" font-family="Inter, sans-serif" font-size="10" font-weight="600" letter-spacing="0.1em">FOUNDATIONS</text>
       <line x1="60" y1="32" x2="540" y2="32" stroke="rgba(245,245,247,0.06)" stroke-width="1"/>
       <text x="80" y="52" fill="rgba(245,245,247,0.6)" font-family="Inter, sans-serif" font-size="11">A Vision of the Future</text>
-      <text x="80" y="72" fill="rgba(245,245,247,0.6)" font-family="Inter, sans-serif" font-size="11">The Augmented LLM</text>
-      <text x="80" y="92" fill="rgba(245,245,247,0.6)" font-family="Inter, sans-serif" font-size="11">The Agentic Loop</text>
-      <text x="80" y="112" fill="rgba(245,245,247,0.6)" font-family="Inter, sans-serif" font-size="11">The Art of Context Window Management</text>
+      <text x="80" y="72" fill="rgba(245,245,247,0.6)" font-family="Inter, sans-serif" font-size="11">Why Now?</text>
+      <text x="80" y="92" fill="rgba(245,245,247,0.6)" font-family="Inter, sans-serif" font-size="11">The Augmented LLM</text>
+      <text x="80" y="112" fill="rgba(245,245,247,0.6)" font-family="Inter, sans-serif" font-size="11">The Agentic Loop</text>
+      <text x="80" y="132" fill="rgba(245,245,247,0.6)" font-family="Inter, sans-serif" font-size="11">The Art of Context Window Management</text>
 
       <!-- Section 2: Patterns -->
-      <text x="60" y="144" fill="rgba(168,85,247,0.6)" font-family="Inter, sans-serif" font-size="10" font-weight="600" letter-spacing="0.1em">PATTERNS</text>
-      <line x1="60" y1="152" x2="540" y2="152" stroke="rgba(245,245,247,0.06)" stroke-width="1"/>
-      <text x="80" y="172" fill="rgba(245,245,247,0.6)" font-family="Inter, sans-serif" font-size="11">\ud83d\udccb Plan Files</text>
-      <text x="240" y="172" fill="rgba(245,245,247,0.6)" font-family="Inter, sans-serif" font-size="11">\ud83d\udcac Conversational Q&amp;A</text>
-      <text x="80" y="192" fill="rgba(245,245,247,0.6)" font-family="Inter, sans-serif" font-size="11">\ud83d\udea6 Red/Green TDD</text>
-      <text x="240" y="192" fill="rgba(245,245,247,0.6)" font-family="Inter, sans-serif" font-size="11">\ud83d\udcf8 Screenshot-Debug Loop</text>
-      <text x="80" y="212" fill="rgba(245,245,247,0.6)" font-family="Inter, sans-serif" font-size="11">\ud83d\udcd5 Read-The-Manual</text>
-      <text x="240" y="212" fill="rgba(245,245,247,0.6)" font-family="Inter, sans-serif" font-size="11">\ud83c\udfad Actor-Critic Validation</text>
+      <text x="60" y="164" fill="rgba(168,85,247,0.6)" font-family="Inter, sans-serif" font-size="10" font-weight="600" letter-spacing="0.1em">PATTERNS</text>
+      <line x1="60" y1="172" x2="540" y2="172" stroke="rgba(245,245,247,0.06)" stroke-width="1"/>
+      <text x="80" y="192" fill="rgba(245,245,247,0.6)" font-family="Inter, sans-serif" font-size="11">\ud83d\udccb Plan Files</text>
+      <text x="240" y="192" fill="rgba(245,245,247,0.6)" font-family="Inter, sans-serif" font-size="11">\ud83d\udcac Conversational Q&amp;A</text>
+      <text x="80" y="212" fill="rgba(245,245,247,0.6)" font-family="Inter, sans-serif" font-size="11">\ud83d\udea6 Red/Green TDD</text>
+      <text x="240" y="212" fill="rgba(245,245,247,0.6)" font-family="Inter, sans-serif" font-size="11">\ud83d\udcf8 Screenshot-Debug Loop</text>
+      <text x="80" y="232" fill="rgba(245,245,247,0.6)" font-family="Inter, sans-serif" font-size="11">\ud83d\udcd5 Read-The-Manual</text>
+      <text x="240" y="232" fill="rgba(245,245,247,0.6)" font-family="Inter, sans-serif" font-size="11">\ud83c\udfad Actor-Critic Validation</text>
     </svg>`,
     notes: 'Table of contents. Two sections: Foundations covers the conceptual building blocks (agentic loop, context windows), then Patterns covers the specific techniques practitioners are converging on. This gives the audience a roadmap so they know where we\u2019re headed.'
   },
@@ -49,6 +50,54 @@ const slides = [
       </div>
     </div>`,
     notes: '\u201CI used to be a mathematics professor. At that time I found there were a certain number of students who could not learn mathematics. I then was charged with the job of making it easy for businessmen to use our computers. I found it was not a question of whether they could learn mathematics or not, but whether they would. [\u2026] They said, \u2018Throw those symbols out \u2014 I do not know what they mean, I have not time to learn symbols.\u2019 I suggest a reply to those who would like data processing people to use mathematical symbols that they make the first attempt to teach those symbols to vice-presidents or a colonel or admiral. I assure you that I tried it.\u201D \u2014 Grace Hopper (FLOW-MATIC, 1955)'
+  },
+  {
+    title: 'Why <span class="accent">Now</span>?',
+    bullets: [
+      'Frontier models have reached a point of <strong>unreasonable effectiveness</strong> at many tasks, including computer programming',
+      'The <strong>tokenomics</strong> hit an inflection point \u2014 these capabilities are increasingly accessible (Claude Code starts at $20/month)',
+      'The <strong>agentic loop</strong> lets these tools pathfind their way towards a goal \u2014 turning a single prompt into dozens of autonomous steps'
+    ],
+    svg: `<svg viewBox="0 0 600 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Three converging arrows -->
+      <defs>
+        <linearGradient id="whyGrad1" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#34d399" stop-opacity="0.6"/>
+          <stop offset="100%" stop-color="#34d399" stop-opacity="0.15"/>
+        </linearGradient>
+        <linearGradient id="whyGrad2" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#2997ff" stop-opacity="0.6"/>
+          <stop offset="100%" stop-color="#2997ff" stop-opacity="0.15"/>
+        </linearGradient>
+        <linearGradient id="whyGrad3" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#a855f7" stop-opacity="0.6"/>
+          <stop offset="100%" stop-color="#a855f7" stop-opacity="0.15"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Row 1: Capability -->
+      <rect x="60" y="10" width="200" height="28" rx="14" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.3)" stroke-width="1"/>
+      <text x="100" y="29" fill="#34d399" font-family="Inter, sans-serif" font-size="10" font-weight="600">Capability</text>
+      <line x1="260" y1="24" x2="370" y2="64" stroke="url(#whyGrad1)" stroke-width="1.5"/>
+      <polygon points="368,60 374,64 368,68" fill="#34d399" opacity="0.5"/>
+
+      <!-- Row 2: Tokenomics -->
+      <rect x="60" y="50" width="200" height="28" rx="14" fill="rgba(41,151,255,0.08)" stroke="rgba(41,151,255,0.3)" stroke-width="1"/>
+      <text x="100" y="69" fill="#2997ff" font-family="Inter, sans-serif" font-size="10" font-weight="600">Tokenomics</text>
+      <line x1="260" y1="64" x2="370" y2="64" stroke="url(#whyGrad2)" stroke-width="1.5"/>
+      <polygon points="368,60 374,64 368,68" fill="#2997ff" opacity="0.5"/>
+
+      <!-- Row 3: Agentic Loop -->
+      <rect x="60" y="90" width="200" height="28" rx="14" fill="rgba(168,85,247,0.08)" stroke="rgba(168,85,247,0.3)" stroke-width="1"/>
+      <text x="100" y="109" fill="#a855f7" font-family="Inter, sans-serif" font-size="10" font-weight="600">Agentic Loop</text>
+      <line x1="260" y1="104" x2="370" y2="64" stroke="url(#whyGrad3)" stroke-width="1.5"/>
+      <polygon points="368,60 374,64 368,68" fill="#a855f7" opacity="0.5"/>
+
+      <!-- Convergence point -->
+      <rect x="374" y="44" width="160" height="40" rx="20" fill="rgba(245,245,247,0.04)" stroke="rgba(245,245,247,0.2)" stroke-width="1"/>
+      <text x="454" y="69" text-anchor="middle" fill="rgba(245,245,247,0.8)" font-family="Inter, sans-serif" font-size="11" font-weight="600">Agentic Engineering</text>
+    </svg>`,
+    notes: 'This is the "why now" framing \u2014 three forces converging simultaneously.\n\n1. CAPABILITY: Starting with Claude Opus 4.5 (November 2025) and equivalent frontier models from OpenAI and Google, people started having their "Opus Moment" \u2014 the first time a model felt unreasonably effective at programming tasks. Reading codebases, reasoning about architecture, writing tests, debugging errors. Not perfect, but good enough that many practitioners changed how they worked.\n\n2. TOKENOMICS: The price-per-million-tokens has dropped dramatically. Claude Code starts at $20/month. What was research-lab-only capability 18 months ago is now available to individual developers. We\u2019re seeing more and more success stories in the field of day-to-day software engineering.\n\n3. AGENTIC LOOP: The key architectural insight \u2014 you don\u2019t need a model that gets everything right in one shot. The agentic loop lets the model take a step, check the result, and course-correct. This transforms "pretty good" single-turn capability into "remarkably effective" multi-turn execution. A model that isn\u2019t perfect on any single step can still complete complex tasks by iterating.\n\nThese three forces are converging at the same time \u2014 that\u2019s what makes this moment distinct.'
   },
   {
     title: 'Fundamentals: <span class="accent">The Augmented LLM</span>',
@@ -124,7 +173,7 @@ const slides = [
         <text x="480" y="254" text-anchor="middle" fill="#34d399" font-family="Inter, sans-serif" font-size="13" font-weight="500">Memory</text>
       </g>
     </svg>`,
-    notes: 'The augmented LLM is the foundational building block of agentic systems. On its own, an LLM takes text in and produces text out. But when you augment it with retrieval (RAG, search), tools (APIs, code execution), and memory (conversation history, knowledge bases), it becomes far more capable. Each augmentation expands what the LLM can do without changing the model itself. This diagram is the atom from which all agentic patterns are composed.\n\nSource: Anthropic, "Building Effective Agents" — https://www.anthropic.com/engineering/building-effective-agents'
+    notes: 'The augmented LLM is the foundational building block of agentic systems. On its own, an LLM takes text in and produces text out. But when you augment it with retrieval (RAG, search), tools (APIs, code execution), and memory (conversation history, knowledge bases), it becomes more capable. Each augmentation expands what the LLM can do without changing the model itself. This diagram is the atom from which all agentic patterns are composed.\n\nSource: Anthropic, "Building Effective Agents" — https://www.anthropic.com/engineering/building-effective-agents'
   },
   {
     title: 'Fundamentals: <span class="accent">The Agentic Loop</span>',
@@ -309,7 +358,7 @@ const slides = [
       <text x="80" y="208" fill="rgba(245,245,247,0.85)" font-family="Inter, sans-serif" font-size="11" font-weight="500">Actor-Critic Validation</text>
       <text x="280" y="208" fill="rgba(245,245,247,0.5)" font-family="Inter, sans-serif" font-size="10">A sub-agent validates the primary agent\u2019s output</text>
     </svg>`,
-    notes: 'This slide is the pivot point of the talk. We\u2019ve covered the fundamentals (agentic loop, context windows) \u2014 now we zoom out and name the discipline.\n\nThe framing comes directly from the Gang of Four\u2019s "Design Patterns: Elements of Reusable Object-Oriented Software" (1994). In the introduction, the authors are explicit: they did not invent nor discover these patterns. They observed recurring solutions in real-world software, gave them names, and cataloged them so practitioners could share a common vocabulary. We\u2019re doing the same thing here for agentic engineering.\n\nThe key observation: from the case studies we\u2019ve seen across multiple domains \u2014 frontend, backend, data pipelines, infrastructure \u2014 the same patterns keep emerging independently. Teams that succeed with coding agents are converging on the same techniques without coordinating. That\u2019s the signal that these are real patterns, not opinions.\n\nThe problem right now is language. Is it "vibe coding" or "agentic engineering"? Is output "AI-generated" or "AI-assisted"? These fuzzy definitions cause real confusion about whether results come from machine capability or human expertise. Naming patterns gives teams a shared vocabulary to discuss tradeoffs precisely.\n\nThe table previews what\u2019s coming: Plan Files (externalizing intent), the Screenshot-Debug Loop (visual verification), Actor-Critic validation, Read-The-Manual constraints, and sub-agent architectures. Each gets its own deep-dive slide.\n\nSource: Simon Willison, "Agentic Engineering Patterns" \u2014 https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/'
+    notes: 'This slide is the pivot point of the talk. We\u2019ve covered the fundamentals (agentic loop, context windows) \u2014 now we zoom out and name the discipline.\n\nThe framing comes directly from the Gang of Four\u2019s "Design Patterns: Elements of Reusable Object-Oriented Software" (1994). In the introduction, the authors are explicit: they did not invent nor discover these patterns. They observed recurring solutions in real-world software, gave them names, and cataloged them so practitioners could share a common vocabulary. We\u2019re doing the same thing here for agentic engineering.\n\nThe key observation: from case studies across multiple domains \u2014 frontend, backend, data pipelines, infrastructure \u2014 we are observing emerging patterns. Teams working with coding agents are independently converging on the same techniques.\n\nThe problem right now is language. Is it "vibe coding" or "agentic engineering"? Is output "AI-generated" or "AI-assisted"? These fuzzy definitions can cause confusion about whether results come from machine capability or human expertise. Naming patterns gives teams a shared vocabulary to discuss tradeoffs precisely.\n\nThe table previews what\u2019s coming: Plan Files (externalizing intent), the Screenshot-Debug Loop (visual verification), Actor-Critic validation, Read-The-Manual constraints, and sub-agent architectures. Each gets its own deep-dive slide.\n\nSource: Simon Willison, "Agentic Engineering Patterns" \u2014 https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/'
   },
   {
     title: '\ud83d\udccb <span class="accent">Plan Files</span>',
@@ -367,7 +416,7 @@ const slides = [
       <text x="470" y="130" text-anchor="middle" fill="rgba(245,245,247,0.5)" font-family="Inter, sans-serif" font-size="9" font-weight="500">Agents perform better with</text>
       <text x="470" y="144" text-anchor="middle" fill="rgba(245,245,247,0.5)" font-family="Inter, sans-serif" font-size="9" font-weight="500">small discrete steps + checks</text>
     </svg>`,
-    notes: 'Plan Files are the most accessible pattern in the catalog \u2014 almost every team that succeeds with coding agents converges on some version of this independently.\n\nThe core insight: LLMs have a finite context window and are much more likely to accomplish tasks when broken down into small discrete steps. A plan file is simply that breakdown serialized in Markdown \u2014 a checklist the agent works through one step at a time.\n\nThe critical enhancement is embedding verification criteria directly in each step. Instead of "Build the API," you write "Build the API \u2014 verify: curl returns 200, response matches schema." This gives the agent a way to check its own work before moving on. You\u2019re essentially building quality assurance into the workflow rather than bolting it on after.\n\nMost tools have some version of this built in \u2014 Claude Code\u2019s Plan mode, Cursor\u2019s plan/act separation, Copilot\u2019s task breakdown. But the pattern is tool-agnostic: you can just write a Markdown checklist and paste it into any agent.\n\nContraindications: "Not every task requires a plan file. For small tasks or ad-hoc discovery, sometimes Conversational Q&A can be just as efficient."\n\nSource: Antonio Blanco, "Agentic Engineering Patterns: Plan Files" \u2014 https://www.linkedin.com/posts/anblanco-at-microsoft_agentic-engineering-patterns-plan-files-activity-7435476534225825792-ioMS'
+    notes: 'Plan Files are one of the most common patterns in the catalog \u2014 many teams working with coding agents converge on some version of this independently.\n\nThe core insight: LLMs have a finite context window and are much more likely to accomplish tasks when broken down into small discrete steps. A plan file is simply that breakdown serialized in Markdown \u2014 a checklist the agent works through one step at a time.\n\nThe critical enhancement is embedding verification criteria directly in each step. Instead of "Build the API," you write "Build the API \u2014 verify: curl returns 200, response matches schema." This gives the agent a way to check its own work before moving on. You\u2019re essentially building quality assurance into the workflow rather than bolting it on after.\n\nMost tools have some version of this built in \u2014 Claude Code\u2019s Plan mode, Cursor\u2019s plan/act separation, Copilot\u2019s task breakdown. But the pattern is tool-agnostic: you can just write a Markdown checklist and paste it into any agent.\n\nContraindications: "Not every task requires a plan file. For small tasks or ad-hoc discovery, sometimes Conversational Q&A can be just as efficient."\n\nSource: Antonio Blanco, "Agentic Engineering Patterns: Plan Files" \u2014 https://www.linkedin.com/posts/anblanco-at-microsoft_agentic-engineering-patterns-plan-files-activity-7435476534225825792-ioMS'
   },
   {
     title: '\ud83d\udcac <span class="accent">Conversational Q&A</span>',
@@ -412,7 +461,7 @@ const slides = [
     title: '\ud83d\udea6 <span class="accent">Red/Green TDD</span>',
     bullets: [
       'The agent writes the failing tests first (red), then implements until they pass (green)',
-      'Most programmers found TDD\u2019s small discrete steps unintuitive \u2014 agents are unreasonably effective at it'
+      'Many programmers found TDD\u2019s small discrete steps unintuitive \u2014 agents are unreasonably effective at it'
     ],
     svg: `<svg viewBox="0 0 600 170" fill="none" xmlns="http://www.w3.org/2000/svg">
       <!-- Step 1: Write Tests -->
@@ -459,7 +508,7 @@ const slides = [
       <text x="100" y="19" fill="rgba(41,151,255,0.6)" font-family="Inter, sans-serif" font-size="9" font-weight="700">PROMPT</text>
       <text x="148" y="19" fill="rgba(245,245,247,0.5)" font-family="Inter, sans-serif" font-size="9">"Build a function to extract headers from markdown. Use red/green TDD."</text>
     </svg>`,
-    notes: 'Red/Green TDD is Simon Willison\u2019s contribution to the agentic patterns catalog, and it\u2019s "a pleasingly succinct way to get better results out of a coding agent."\n\nThe workflow is strict test-first development:\n1. Write automated tests that define the expected behavior\n2. Run them and confirm they FAIL (the red phase)\n3. Let the agent implement code to make the tests pass (the green phase)\n4. Verify all tests pass\n\nStep 2 is the one most people skip, and it\u2019s the most important. If you don\u2019t confirm the tests fail first, you risk writing tests that already pass \u2014 which means you haven\u2019t actually validated anything. The red phase is your proof that the tests are meaningful.\n\nThis pattern addresses two risks that are amplified with coding agents:\n\u2022 Broken code: agents can generate plausible-looking implementations that don\u2019t actually work. Tests catch this.\n\u2022 Unnecessary code: agents tend to over-build. When you write the tests first, you define exactly what\u2019s needed \u2014 nothing more.\n\nThe bonus: you end up with a real test suite that protects against regressions as the project grows. This is one of the few patterns where using an agent actually improves code quality compared to manual development, because most developers skip writing tests when they\u2019re in a hurry.\n\nThe prompt pattern is dead simple: just append "Use red/green TDD" to your request.\n\nSource: Simon Willison, "Red/Green TDD" \u2014 https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/'
+    notes: 'Red/Green TDD is Simon Willison\u2019s contribution to the agentic patterns catalog, and it\u2019s "a pleasingly succinct way to get better results out of a coding agent."\n\nThe workflow is strict test-first development:\n1. Write automated tests that define the expected behavior\n2. Run them and confirm they FAIL (the red phase)\n3. Let the agent implement code to make the tests pass (the green phase)\n4. Verify all tests pass\n\nStep 2 is the one most people skip, and it\u2019s the most important. If you don\u2019t confirm the tests fail first, you risk writing tests that already pass \u2014 which means you haven\u2019t actually validated anything. The red phase is your proof that the tests are meaningful.\n\nThis pattern addresses two risks that are amplified with coding agents:\n\u2022 Broken code: agents can generate plausible-looking implementations that don\u2019t actually work. Tests catch this.\n\u2022 Unnecessary code: agents tend to over-build. When you write the tests first, you define exactly what\u2019s needed \u2014 nothing more.\n\nA side benefit: you end up with a test suite that protects against regressions. Many developers skip writing tests under time pressure \u2014 this pattern makes test coverage a natural byproduct of the workflow.\n\nThe prompt pattern is dead simple: just append "Use red/green TDD" to your request.\n\nSource: Simon Willison, "Red/Green TDD" \u2014 https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/'
   },
   {
     title: '\ud83d\udcf8 <span class="accent">The Screenshot-Debug Loop</span>',
@@ -566,7 +615,7 @@ const slides = [
       <text x="528" y="77" text-anchor="middle" fill="rgba(52,211,153,0.7)" font-family="Inter, sans-serif" font-size="11" font-weight="600">\u2714 Correct</text>
       <text x="528" y="93" text-anchor="middle" fill="rgba(245,245,247,0.35)" font-family="Inter, sans-serif" font-size="9">idiomatic code</text>
     </svg>`,
-    notes: 'Read-The-Manual is deceptively simple: instead of hoping the agent\u2019s training data includes the right API or framework knowledge, explicitly point it to the documentation.\n\nThis works because of a fundamental capability described in "Language Models are Few-Shot Learners" (Brown et al., 2020 \u2014 the GPT-3 paper): given just a few examples in context, LLMs can infer the underlying pattern and generalize. You don\u2019t need to teach the agent an entire framework \u2014 a handful of representative examples from the docs is often enough.\n\nWhere to find documentation:\n\u2022 Most open-source projects have docs in their repo \u2014 a git clone away\n\u2022 Many frameworks publish Markdown docs that can be fed directly into context\n\u2022 API references, READMEs, and CHANGELOG files are all high-signal sources\n\u2022 Some tools (like Claude Code\u2019s CLAUDE.md) are specifically designed for this pattern\n\nThe key insight: hand-curated documentation is higher signal than letting the agent guess from training data. The agent\u2019s training data may be outdated, incomplete, or contaminated with bad examples from Stack Overflow. Official docs are the authoritative source.\n\nSource: Brown et al., "Language Models are Few-Shot Learners" (2020) \u2014 https://arxiv.org/abs/2005.14165'
+    notes: 'Read-The-Manual is deceptively simple: instead of hoping the agent\u2019s training data includes the right API or framework knowledge, explicitly point it to the documentation.\n\nThis works because of a fundamental capability described in "Language Models are Few-Shot Learners" (Brown et al., 2020 \u2014 the GPT-3 paper): given just a few examples in context, LLMs can infer the underlying pattern and generalize. You don\u2019t need to teach the agent an entire framework \u2014 a handful of representative examples from the docs is often enough.\n\nWhere to find documentation:\n\u2022 Most open-source projects have docs in their repo \u2014 a git clone away\n\u2022 Many frameworks publish Markdown docs that can be fed directly into context\n\u2022 API references, READMEs, and CHANGELOG files are all high-signal sources\n\u2022 Some tools (like Claude Code\u2019s CLAUDE.md) are specifically designed for this pattern\n\nThe key insight: hand-curated documentation is higher signal than letting the agent guess from training data. The agent\u2019s training data may be outdated, incomplete, or mixed with outdated or incorrect examples. Official docs are the authoritative source.\n\nSource: Brown et al., "Language Models are Few-Shot Learners" (2020) \u2014 https://arxiv.org/abs/2005.14165'
   },
   {
     title: '\ud83c\udfad <span class="accent">Actor-Critic SubAgent Validation</span>',
@@ -609,7 +658,7 @@ const slides = [
       <polygon points="484,138 487,146 490,138" fill="rgba(52,211,153,0.3)"/>
       <text x="487" y="158" text-anchor="middle" fill="rgba(52,211,153,0.5)" font-family="Inter, sans-serif" font-size="9" font-weight="500">\u2714 Ready for human review</text>
     </svg>`,
-    notes: 'Actor-Critic SubAgent Validation is the most architecturally interesting pattern in the catalog. The core idea: use a separate agent with its own clean context window to independently review the work of the main agent.\n\nWhy a separate context window matters: the "actor" agent\u2019s context is full of implementation details \u2014 file contents, error messages, iterative attempts. By the time it produces output, it\u2019s deep in the weeds. The "critic" agent sees only the output and the validation criteria. This separation of concerns means the critic isn\u2019t biased by the implementation journey \u2014 it\u2019s focused purely on "does this meet the bar?"\n\nUse cases:\n\u2022 Code reviews: the critic agent reviews a PR or diff against coding standards, security checklists, or architectural guidelines\n\u2022 Content creation: the actor drafts, the critic checks against a style guide, fact-checks claims, or verifies completeness\n\u2022 Document validation: "can you independently validate the claims this document makes?" \u2014 the critic cross-references sources\n\nThe key insight: by the time the actor-critic loop completes, the output has already been through most of the routine checks. What reaches the human reviewer is higher quality than a one-shot approach \u2014 the human can focus on judgment calls and high-level decisions rather than catching mechanical errors.'
+    notes: 'Actor-Critic SubAgent Validation introduces a separation of concerns between implementation and review. The core idea: use a separate agent with its own clean context window to independently review the work of the main agent.\n\nWhy a separate context window matters: the "actor" agent\u2019s context is full of implementation details \u2014 file contents, error messages, iterative attempts. By the time it produces output, it\u2019s deep in the weeds. The "critic" agent sees only the output and the validation criteria. This separation of concerns means the critic isn\u2019t biased by the implementation journey \u2014 it\u2019s focused purely on "does this meet the bar?"\n\nUse cases:\n\u2022 Code reviews: the critic agent reviews a PR or diff against coding standards, security checklists, or architectural guidelines\n\u2022 Content creation: the actor drafts, the critic checks against a style guide, fact-checks claims, or verifies completeness\n\u2022 Document validation: "can you independently validate the claims this document makes?" \u2014 the critic cross-references sources\n\nThe key insight: by the time the actor-critic loop completes, the output has already been through most of the routine checks. What reaches the human reviewer is higher quality than a one-shot approach \u2014 the human can focus on judgment calls and high-level decisions rather than catching mechanical errors.'
   },
   {
     title: '<span class="accent">References</span>',

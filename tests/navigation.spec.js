@@ -8,7 +8,7 @@ test.describe('Slide Deck', () => {
 
   test('renders all slides and first slide is visible', async ({ page }) => {
     const slides = page.locator('.slide');
-    await expect(slides).toHaveCount(14);
+    await expect(slides).toHaveCount(15);
 
     const firstSlide = slides.nth(0);
     await expect(firstSlide).toHaveClass(/active/);
@@ -17,7 +17,7 @@ test.describe('Slide Deck', () => {
 
   test('renders nav dots matching slide count', async ({ page }) => {
     const dots = page.locator('.nav-dot');
-    await expect(dots).toHaveCount(14);
+    await expect(dots).toHaveCount(15);
     await expect(dots.nth(0)).toHaveClass(/active/);
   });
 
@@ -86,7 +86,7 @@ test.describe('Slide Deck', () => {
   test('URLs in speaker notes are clickable links', async ({ page }) => {
     // Navigate to the augmented LLM slide (has a URL in notes)
     const dots = page.locator('.nav-dot');
-    await dots.nth(3).click();
+    await dots.nth(4).click();
 
     // Open notes
     await page.keyboard.press('n');
@@ -114,25 +114,25 @@ test.describe('Slide Deck', () => {
 
     // Go to last slide (slide 0 -> 1, then 3 steps on augmented LLM, then 1->2, 2->3, 3->4)
     const dots = page.locator('.nav-dot');
-    await dots.nth(13).click();
-    await expect(page.locator('.slide').nth(13)).toHaveClass(/active/);
+    await dots.nth(14).click();
+    await expect(page.locator('.slide').nth(14)).toHaveClass(/active/);
 
     // Press right on last slide — should stay
     await page.keyboard.press('ArrowRight');
-    await expect(page.locator('.slide').nth(13)).toHaveClass(/active/);
+    await expect(page.locator('.slide').nth(14)).toHaveClass(/active/);
   });
 
   test('augmented LLM slide reveals steps before advancing', async ({ page }) => {
-    // Navigate to slide 4 (the augmented LLM slide, index 3)
+    // Navigate to slide 5 (the augmented LLM slide, index 4)
     const dots = page.locator('.nav-dot');
-    await dots.nth(3).click();
+    await dots.nth(4).click();
     const slides = page.locator('.slide');
-    await expect(slides.nth(3)).toHaveClass(/active/);
+    await expect(slides.nth(4)).toHaveClass(/active/);
 
     // Steps should start hidden
-    const step1 = slides.nth(3).locator('.step-1');
-    const step2 = slides.nth(3).locator('.step-2');
-    const step3 = slides.nth(3).locator('.step-3');
+    const step1 = slides.nth(4).locator('.step-1');
+    const step2 = slides.nth(4).locator('.step-2');
+    const step3 = slides.nth(4).locator('.step-3');
     await expect(step1).not.toHaveClass(/visible/);
     await expect(step2).not.toHaveClass(/visible/);
     await expect(step3).not.toHaveClass(/visible/);
@@ -143,7 +143,7 @@ test.describe('Slide Deck', () => {
     await expect(step2).not.toHaveClass(/visible/);
     await expect(step3).not.toHaveClass(/visible/);
     // Still on same slide
-    await expect(slides.nth(3)).toHaveClass(/active/);
+    await expect(slides.nth(4)).toHaveClass(/active/);
 
     // Press right: step 2 reveals
     await page.keyboard.press('ArrowRight');
@@ -154,15 +154,15 @@ test.describe('Slide Deck', () => {
     await page.keyboard.press('ArrowRight');
     await expect(step3).toHaveClass(/visible/);
     // Still on same slide
-    await expect(slides.nth(3)).toHaveClass(/active/);
-
-    // Press right again: now advances to slide 5
-    await page.keyboard.press('ArrowRight');
     await expect(slides.nth(4)).toHaveClass(/active/);
 
-    // Go back: should return to slide 4 at step 0 (steps hidden)
+    // Press right again: now advances to slide 6
+    await page.keyboard.press('ArrowRight');
+    await expect(slides.nth(5)).toHaveClass(/active/);
+
+    // Go back: should return to slide 5 at step 0 (steps hidden)
     await page.keyboard.press('ArrowLeft');
-    await expect(slides.nth(3)).toHaveClass(/active/);
+    await expect(slides.nth(4)).toHaveClass(/active/);
     await expect(step1).not.toHaveClass(/visible/);
   });
 });

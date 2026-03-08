@@ -180,6 +180,24 @@
 
     notesToggle.addEventListener('click', toggleNotes);
 
+    // Touch/swipe navigation for mobile
+    let touchStartX = 0;
+    let touchStartY = 0;
+
+    document.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+      touchStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+
+    document.addEventListener('touchend', (e) => {
+      const deltaX = e.changedTouches[0].screenX - touchStartX;
+      const deltaY = e.changedTouches[0].screenY - touchStartY;
+      if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 50) {
+        if (deltaX < 0) next();
+        else prev();
+      }
+    }, { passive: true });
+
     // Hash change (back/forward buttons)
     window.addEventListener('hashchange', () => {
       const hashMatch = location.hash.match(/^#\/(\d+)$/);

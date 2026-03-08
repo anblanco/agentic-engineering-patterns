@@ -679,6 +679,11 @@ const slides = [
         <span class="reference-title">LinkedIn</span>
         <span class="reference-desc">Presenter \u2014 writes about AI-assisted engineering patterns</span>
       </a>
+      <a href="https://github.com/anblanco/agentic-engineering-patterns" target="_blank" rel="noopener" class="reference-item">
+        <span class="reference-source">GitHub</span>
+        <span class="reference-title">anblanco/agentic-engineering-patterns</span>
+        <span class="reference-desc">Source code for this slide deck</span>
+      </a>
     </div>`,
     notes: 'These references informed the patterns and narrative of this presentation. The Anthropic engineering hub is particularly valuable for its practical guides on building with AI agents.'
   }

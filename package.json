@@ -1,0 +1,13 @@
+{
+  "name": "agentic-engineering-patterns",
+  "version": "0.1.0",
+  "description": "Agentic Engineering Patterns — slide deck presentation",
+  "scripts": {
+    "start": "npx serve -l 3000",
+    "test": "npx playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0"
+  },
+  "license": "MIT"
+}

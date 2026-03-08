@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agentic Engineering Patterns</title>
+  <meta name="description" content="A pattern language for software engineers working with AI code generation tools.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="bg-mesh" aria-hidden="true">
+    <div class="bg-orb"></div>
+  </div>
+
+  <div class="slide-container" id="slide-container">
+    <!-- Slides rendered by JS -->
+  </div>
+
+  <div class="nav-dots" id="nav-dots"></div>
+
+  <div class="notes-bar" id="notes-bar">
+    <div class="notes-content" id="notes-content"></div>
+  </div>
+
+  <button class="notes-toggle" id="notes-toggle" aria-label="Toggle speaker notes">Notes</button>
+
+  <div class="debug-toggle" id="debug-toggle">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+      <ellipse cx="8" cy="9" rx="4" ry="4.5"/>
+      <circle cx="8" cy="4" r="2"/>
+      <line x1="2" y1="7" x2="4" y2="8"/>
+      <line x1="14" y1="7" x2="12" y2="8"/>
+      <line x1="2" y1="12" x2="4" y2="11"/>
+      <line x1="14" y1="12" x2="12" y2="11"/>
+      <line x1="8" y1="2" x2="6" y2="0.5"/>
+      <line x1="8" y1="2" x2="10" y2="0.5"/>
+    </svg>
+  </div>
+  <div class="debug-panel" id="debug-panel"></div>
+
+  <div class="kbd-hint" aria-hidden="true">
+    <kbd>&larr;</kbd> <kbd>&rarr;</kbd> navigate &middot; <kbd>N</kbd> notes
+  </div>
+
+  <script src="js/slides.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

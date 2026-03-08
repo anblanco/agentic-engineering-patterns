@@ -1,0 +1,18 @@
+// @ts-check
+const { defineConfig } = require('@playwright/test');
+
+module.exports = defineConfig({
+  testDir: '.',
+  testMatch: '*.spec.js',
+  timeout: 15000,
+  use: {
+    baseURL: 'http://localhost:3000',
+    headless: true,
+  },
+  webServer: {
+    command: 'npx serve -l 3000 ..',
+    port: 3000,
+    reuseExistingServer: !process.env.CI,
+    cwd: __dirname,
+  },
+});
